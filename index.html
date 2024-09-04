@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Weather App</h1>
+        <div class="tabContainers">
+            <div class="yourWeatherTab">Your Weather</div>
+            <div class="searchWeaherTab">Search Weather</div>
+        </div>
+        <section class="weatherSection">
+            <!-- Grant loction container -->
+            <div class="grantLocationContainer">
+                <img src="./img/marker.gif" width="80" height="80" loading="lazy">
+                <p>Grant Location Access</p>
+                <p>Allow Access to get weather Information</p>
+                <button class="grantLocationsBtn">Grant Access</button>
+            </div>
+            <!-- Search weather -->
+            <form class="searchLocationContainer">
+                <input type="text" class="searchInput" placeholder="Search a City">
+                <button class="searchLocationBtn" type="submit">
+                    <img src="./img/search.png" alt="Search" width="25" height="25" loading="lazy">
+                </button>
+            </form>
+            <!-- loading screen -->
+            <div class="loadingSectionContainer">
+                <img src="./img/loading.gif" alt="Loading" width="60" height="60" loading="lazy">
+                <p>Loading...</p>
+            </div>
+            <!-- your weather container -->
+            <div class="yourWeatherContainer">
+                <div class="name">
+                    <p class="cityName"></p>
+                    <img class="countryImg">
+                </div>
+                
+                <img class="weatherIcon">
+                <p class="weatherDiscription"></p>
+                <h2 class="temp"></h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="img/windspeed.gif" alt="card1">
+                        <p>Windspeed</p>
+                        <p class="windspeedData"></p>
+                    </div>
+                    <div class="card">
+                        <img src="img/humidity.gif" alt="card1">
+                        <p>Humidity</p>
+                        <p class="humidityData"></p>
+                    </div>
+                    <div class="card">
+                        <img src="img/cloud.gif" alt="card1">
+                        <p>Cloud</p>
+                        <p class="cloudData"></p>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
