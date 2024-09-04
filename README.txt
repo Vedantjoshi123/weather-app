@@ -21,7 +21,7 @@ API Information:
 
 Getting Started:
 1. Clone the repository:
-   git clone https://github.com/YourUsername/Weather-App.git
+   git clone https://github.com/Vedantjoshi123/weather-app.git
 
 2. Navigate to the project directory:
    cd Weather-App
